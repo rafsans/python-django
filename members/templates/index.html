@@ -1,0 +1,130 @@
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Start Navbar -->
+    <div class="nav">
+      <div class="img-logo">
+        <a>
+          <img class="logo" src="{% static 'img/logo.png' %}" />
+        </a>
+      </div>
+      <div class="list">
+        <ul>
+          <li><a class="active" href="#">Beranda</a></li>
+          <li><a class="link" href="#">Tentang</a></li>
+          <li><a class="link" href="#">Layanan</a></li>
+          <li><a class="link" href="#">Kontak</a></li>
+        </ul>
+      </div>
+      <div class="search-bar">
+        <div class="search-wrapper">
+          <input class="search-input" type="text" placeholder="Search" />
+          <button class="search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- end navbar -->
+
+    <!-- Start Iklan -->
+    <div class="ads-wrapper">
+      <a href="https://www.axis.co.id/"
+        ><img src="{% static 'img/AXIS-Owsem-Feature.jpg' %}" alt=""
+      /></a>
+    </div>
+    <!-- End Iklan -->
+    <!-- start list user -->
+    <h1>List Users</h1>
+    <div class="table-wrapper">
+      <table class="table">
+        <tr>
+          <th>No.</th>
+          <th class="name">Nama</th>
+        </tr>
+        {% for x in data %}
+        <tr>
+          <td>{{ x.number }}</td>
+          <td class="name">{{ x.name }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+
+      <table class="table">
+        <tr>
+          <th>No.</th>
+          <th class="name">Nama</th>
+        </tr>
+        {% for x in data1 %}
+        <tr>
+          <td>{{ x.number }}</td>
+          <td class="name">{{ x.name }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+
+      <table class="table">
+        <tr>
+          <th>No.</th>
+          <th class="name">Nama</th>
+        </tr>
+        {% for x in data2 %}
+        <tr>
+          <td>{{ x.number }}</td>
+          <td class="name">{{ x.name }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+
+      <table class="table">
+        <tr>
+          <th>No.</th>
+          <th class="name">Nama</th>
+        </tr>
+        {% for x in data3 %}
+        <tr>
+          <td>{{ x.number }}</td>
+          <td class="name">{{ x.name }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+
+      <table class="table">
+        <tr>
+          <th>No.</th>
+          <th class="name">Nama</th>
+        </tr>
+        {% for x in data4 %}
+        <tr>
+          <td>{{ x.number }}</td>
+          <td class="name">{{ x.name }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+
+      <table class="table">
+        <tr>
+          <th>No.</th>
+          <th class="name">Nama</th>
+        </tr>
+        {% for x in data5 %}
+        <tr>
+          <td>{{ x.number }}</td>
+          <td class="name">{{ x.name }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+          </div>
+    <!-- end list user -->
+  </body>
+</html>

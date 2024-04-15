@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #12132a;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+}
+
+.img-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.list {
+  display: flex;
+  width: max-content;
+  margin: 0px 5px 0px 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.list ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  list-style-type: none;
+}
+
+.list ul li {
+  margin: 0px 20px;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+.list .link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.507);
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+
+.list ul li a:hover {
+  border-bottom: 2px solid white;
+  color: white;
+  opacity: 1;
+  transition: 0.2s ease-in-out;
+}
+
+.active {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 8px;
+  color: rgb(255, 255, 255);
+  border-bottom: 2px solid white;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-wrapper {
+  border: 1px solid rgba(255, 255, 255, 0.39);
+  border-radius: 7px;
+  padding: 2px;
+}
+
+.search-wrapper:focus {
+  border: 1px solid white;
+  border-radius: 7px;
+  padding: 2px;
+}
+
+.search-input {
+  border: none;
+  flex: 1;
+  padding: 8px 12px;
+  font-size: 12px;
+  width: 200px;
+  margin: 0px;
+}
+
+.search-input:focus {
+  border: none;
+  outline: none;
+}
+
+.search-input[type="text"] {
+  background-color: #12132a;
+  color: white;
+}
+
+.search-input[type="text"]::placeholder {
+  color: rgba(255, 255, 255, 0.39);
+}
+
+.search-btn {
+  text-decoration: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.39);
+  background: none;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  color: white;
+}
+.ads-wrapper {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ads-wrapper img{
+  height: 500px;
+}
+
+.table-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: white;
+  margin-left: 100px;
+}
+
+.table {
+  font-family: sans-serif;
+  color: #ffffff;
+  border-collapse: collapse;
+  margin-right: 25px;
+  margin-bottom: 50px;
+}
+
+.table,
+th,
+td {
+  border: 1px solid #999;
+  padding: 8px 20px;
+}
+
+.table .name {
+  width: 150px;
+}
